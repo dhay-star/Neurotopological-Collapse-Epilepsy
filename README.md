@@ -1,6 +1,6 @@
 Project Title :
 
-Comparative Neurotopology — Experimental Validation of the FBD Salazar Theory
+Comparative Neurotopology Experimental Validation of the FBD Salazar Theory
 
 Project Overview :
 
@@ -8,7 +8,7 @@ This project presents a computational implementation of the Physicobioneurodynam
 
 Using EEG recordings from the CHB-MIT Scalp EEG Database, the study models how informational complexity and network geometry evolve before, during, and after epileptic seizures  offering experimental support for the collapse of complexity described in the FBD framework.
 
-Theoretical Foundation — FBD Salazar Theory :
+Theoretical Foundation FBD Salazar Theory :
 
 According to Salazar’s Physicobioneurodynamic (FBD) Theory, brain activity transitions cyclically through three key phases:
 
@@ -30,7 +30,7 @@ Track pre-ictal, ictal, and post-ictal dynamics through entropy, homology, and R
 
 Datasets :
 
-Epileptic EEG: CHB-MIT Scalp EEG Database (PhysioNet) — pediatric patients with drug-resistant epilepsy (Boston Children’s Hospital).
+Epileptic EEG: CHB-MIT Scalp EEG Database (PhysioNet) pediatric patients with drug-resistant epilepsy (Boston Children’s Hospital).
 
 Healthy EEG: baseline resting-state EEG (/s01.csv)
 Dataset Source: PhysioNet CHB-MIT EEG Database " https://physionet.org/content/chbmit/1.0.0/ "
@@ -55,7 +55,7 @@ The results align with Arturo Salazar Chon’s proposition that:
 
 “Consciousness and stability arise from the dynamic coupling between energy flow (entropy) and geometric organization (fractal topology).”
 
-During seizures, the system experiences an informational collapse, where entropy and curvature indicate a loss of diversity and network rigidity — precisely as predicted by the Physicobioneurodynamic model.
+During seizures, the system experiences an informational collapse, where entropy and curvature indicate a loss of diversity and network rigidity precisely as predicted by the Physicobioneurodynamic model.
 
 Tools and Libraries :
 
