@@ -78,6 +78,8 @@ Code writer : Dhay Amer Kadhim .
 
 Kaggle Notebook: 
 
-FBD Part One : https://www.kaggle.com/code/engdhay/fbd-part-one
-FBD Part Two : https://www.kaggle.com/code/engdhay/fbd-part-two
-FBD part Three: https://www.kaggle.com/code/engdhay/fbd-part-three 
+ Part One : [https://www.kaggle.com/code/engdhay/fbd-part-one](https://www.kaggle.com/code/engdhay/eeg-part-one)
+ Part Two : [https://www.kaggle.com/code/engdhay/fbd-part-two](https://www.kaggle.com/code/engdhay/eeg-part-two)
+ part Three: [https://www.kaggle.com/code/engdhay/eeg-part-three](https://www.kaggle.com/code/engdhay/eeg-part-three)
+ part four: [https://www.kaggle.com/code/engdhay/eeg-part-four](https://www.kaggle.com/code/engdhay/eeg-part-four)
+
