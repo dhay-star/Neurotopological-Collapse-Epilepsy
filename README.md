@@ -1,63 +1,57 @@
-Project Title :
+Project Title:
+Comparative Neurotopology Experimental Validation of Neural Complexity Collapse in Epilepsy
 
-Comparative Neurotopology Experimental Validation of the FBD Salazar Theory
+Project Overview:
+This project presents a computational study demonstrating that epileptic seizures lead to a collapse of neural complexity, not just abnormal electrical activity. EEG recordings from the CHB-MIT Scalp EEG Database were analyzed across pre-ictal, ictal, and post-ictal periods, spanning 5 days, 3 hours, and 5 minutes before and after seizures.
 
-Project Overview :
+Parts 1–3 – Empirical Validation (Methodology by Arturo Salazar, Code by Dhay Amer Kadhim):
 
-This project presents a computational implementation of the Physicobioneurodynamic (FBD) Theory, originally proposed by Arturo Salazar Chon, through a comparative analysis of EEG neurotopology in epileptic patients and a healthy subject.
+Structural Complexity (S): Derived from Ricci curvature and curvature variance to quantify network geometry integrity.
 
-Using EEG recordings from the CHB-MIT Scalp EEG Database, the study models how informational complexity and network geometry evolve before, during, and after epileptic seizures  offering experimental support for the collapse of complexity described in the FBD framework.
+Informational Differentiation (I): Permutation entropy captures the predictability and diversity of neural signals.
 
-Theoretical Foundation FBD Salazar Theory :
+Coherence (C): Correlation structure and H1 persistence measure temporal coordination and topological resilience.
 
-According to Salazar’s Physicobioneurodynamic (FBD) Theory, brain activity transitions cyclically through three key phases:
+Summary: These metrics were computed per patient and visualized over time. Results consistently show that during seizures, epileptic brains exhibit high variability in S, I, C, indicating structural instability and informational disorder, confirming collapse of neural complexity.
 
-Isostasis (Homeostatic Balance): stable and coherent information flow in healthy conditions.
+ΔΦ Operator (Integration of S/I/C Metrics):
 
-Collapse of Complexity: during pathological events (e.g., seizures), the neural network loses multiscale organization and becomes hypersynchronized.
+ΔS(x) = S(x) − S_baseline
 
-Reorganization: gradual recovery of variability and fractal structure after the collapse.
+ΔI(x) = I(x) − I_baseline
 
-This code models these transitions using topological, informational, and geometric metrics derived from EEG signals, serving as a practical validation of the FBD neurodynamic principles.
+ΔC(x) = C(x) − C_baseline
 
-Objectives :
+ΔΦ(x) = 0.40 ⋅ |ΔS(x)| + 0.35 ⋅ |ΔI(x)| + 0.25 ⋅ |ΔC(x)|
 
-Quantify and visualize neural complexity collapse predicted by the FBD model.
+Interpretation: ΔΦ quantifies deviation from baseline, classifying brain states into:
 
-Compare the geometric–topological structure of healthy and epileptic EEG networks.
+Isostasis: ΔΦ < 0.15
 
-Track pre-ictal, ictal, and post-ictal dynamics through entropy, homology, and Ricci curvature.
+Allostasis: 0.15 ≤ ΔΦ < 0.35
 
-Datasets :
+High-Allostasis: 0.35 ≤ ΔΦ < 0.40
 
-Epileptic EEG: CHB-MIT Scalp EEG Database (PhysioNet) pediatric patients with drug-resistant epilepsy (Boston Children’s Hospital).
+Collapse: ΔΦ ≥ 0.40
 
-Healthy EEG: baseline resting-state EEG (/s01.csv)
-Dataset Source: PhysioNet CHB-MIT EEG Database " https://physionet.org/content/chbmit/1.0.0/ "
+Collapse segments are detected when ΔΦ ≥ 0.40 for ≥2 consecutive windows, robustly identifying critical breakdowns.
 
-Methods and Framework : 
+Part 4 – FBD Neurodynamic Theory (Theory by Kaboth, Wende, Krüger; Application by Dhay Amer Kadhim):
+This framework models brain dynamics along the three DLHR axes (S, I, C), integrating structural, informational, and coherence dimensions.
 
-Concept	Implementation	Theoretical Link
-Permutation Entropy	ant.perm_entropy()	Information dynamics / energy flow
-Ricci Curvature (Ollivier, 2009)	networkx graph curvature	Geometric organization of neural topology
-Persistent Homology	ripser + persim	Topological resilience and structural depth
-Fractal & Complexity Metrics	Hjorth, Lempel-Ziv, Hurst	Multiscale self-organization
-Key Findings
+Core Idea: ΔΦ measures weighted deviations along S/I/C axes from baseline to detect functional breakdowns.
 
-Across all analyzed stages (3 days, 3 hours, 5 minutes before, and post-seizure), epileptic patients consistently exhibited higher topological and geometric complexity compared to the healthy subject.
+Application: EEG datasets are evaluated under this theory to confirm the collapse–reorganization dynamics predicted by FBD.
 
-However, within the FBD theoretical framework, this increased complexity represents structural instability and informational disorder, not functional enhancement.
-The epileptic brain, deprived of medication and showing hypersynchronization, demonstrates persistent chaotic complexity, confirming the collapse–reorganization dynamics of the FBD model.
+Key Findings:
 
-Scientific Interpretation
+Across 5-day, 3-hour, and 5-minute windows, epileptic patients consistently showed persistent high variability in S, I, C, reflecting network instability.
 
-The results align with Arturo Salazar Chon’s proposition that:
+ΔΦ analysis identifies critical collapse periods, confirming theoretical thresholds.
 
-“Consciousness and stability arise from the dynamic coupling between energy flow (entropy) and geometric organization (fractal topology).”
+Healthy EEG exhibits stable S, I, C, and ΔΦ remains mostly below 0.15 (Isostasis).
 
-During seizures, the system experiences an informational collapse, where entropy and curvature indicate a loss of diversity and network rigidity precisely as predicted by the Physicobioneurodynamic model.
-
-Tools and Libraries :
+Tools and Libraries:
 
 Python 3.10
 
@@ -67,14 +61,20 @@ NetworkX — Ricci curvature networks
 
 Ripser / Persim — Topological Data Analysis (TDA)
 
-Antropy — entropy and complexity metrics
+Antropy — Entropy and complexity metrics
 
-Matplotlib / NumPy / SciPy — computation and visualization
+Matplotlib / NumPy / SciPy — Computation and visualization
 
-Credits :
+Credits:
 
-Theory Researcher : Arturo Salazar Chon .
-Code writer : Dhay Amer Kadhim .
+Methodology / Parts 1–3: Arturo Salazar (research)
+
+Code Implementation / Analysis: Dhay Amer Kadhim
+
+FBD Theory / Part 4: Pasquale Kaboth, Marcel Theodor Wende, Marcel Krüger
+
+Application of Theory: Dhay Amer Kadhim
+
 
 Kaggle Notebook: 
 
